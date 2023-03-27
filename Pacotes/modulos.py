@@ -10,3 +10,17 @@ def line(msg):
     print(f'{cores["roxo"]}-{cores["limpar"]}' * len(msg))
     print(f'{cores["verde"]}{msg}{cores["limpar"]}')
     print(f'{cores["roxo"]}-{cores["limpar"]}' * len(msg))
+
+
+def somar(a, b):
+    s = a + b
+    return s
+
+
+def leiaint(msg):
+    try:
+        numero = int(input(msg))
+    except (TypeError, ValueError):
+        print(f'{cores["vermelho"]}Erro!{cores["limpar"]} digite um número valido.')
+    else:
+        return numero
