@@ -24,3 +24,12 @@ def leiaint(msg):
         print(f'{cores["vermelho"]}Erro!{cores["limpar"]} digite um número valido.')
     else:
         return numero
+    
+
+def scanv(n):
+    print(f'Tipo da variavel é {cores["roxo"]}{type(n)}{cores["limpar"]}')
+    print(f'É Alfanúmerico? {cores["roxo"]}{n.isalnum()}{cores["limpar"]}')
+    print(f'É númerico? {cores["roxo"]}{n.isnumeric()}{cores["limpar"]}')
+    print(f'É Alfabeto? {cores["roxo"]}{n.isalpha()}{cores["limpar"]}')
+    print(f'Pode imprimir? {cores["roxo"]}{n.isprintable()}{cores["limpar"]}')
+    print(f'Só tem espaços? {cores["roxo"]}{n.isspace()}{cores["limpar"]}')
