@@ -18,12 +18,14 @@ def somar(a, b):
 
 
 def leiaint(msg):
-    try:
-        numero = int(input(msg))
-    except (TypeError, ValueError):
-        print(f'{cores["vermelho"]}Erro!{cores["limpar"]} digite um número valido.')
-    else:
-        return numero
+    while True:
+        try:
+            numero = int(input(msg))
+        except (TypeError, ValueError):
+            print(f'{cores["vermelho"]}Erro!{cores["limpar"]} digite um número valido.')
+        else:
+            return numero
+            break
     
 
 def scanv(n):
@@ -33,3 +35,18 @@ def scanv(n):
     print(f'É Alfabeto? {cores["roxo"]}{n.isalpha()}{cores["limpar"]}')
     print(f'Pode imprimir? {cores["roxo"]}{n.isprintable()}{cores["limpar"]}')
     print(f'Só tem espaços? {cores["roxo"]}{n.isspace()}{cores["limpar"]}')
+
+
+def dobro(n):
+    r = 2 * n
+    return r
+
+
+def triplo(n):
+    r = 3 * n
+    return r
+
+
+def quadrado(n):
+    r = n ** (1/2)
+    return r
