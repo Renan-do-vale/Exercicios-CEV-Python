@@ -26,6 +26,17 @@ def leiaint(msg):
         else:
             return numero
             break
+
+
+def leiafloat(msg):
+    while True:
+        try:
+            numero = float(input(msg))
+        except (TypeError, ValueError):
+            print(f'{cores["vermelho"]}Erro!{cores["limpar"]} digite um número valido.')
+        else:
+            return numero
+            break
     
 
 def scanv(n):
@@ -50,3 +61,8 @@ def triplo(n):
 def quadrado(n):
     r = n ** (1/2)
     return r
+
+
+def media(*num):
+    m = sum(num)/len(num)
+    return m
