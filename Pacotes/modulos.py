@@ -66,3 +66,20 @@ def quadrado(n):
 def media(*num):
     m = sum(num)/len(num)
     return m
+
+
+def conversor(m):
+    dm = m*10
+    cm = m*100
+    mm = m*1000
+    dam = m/10
+    hm = m/100
+    km = m/1000
+    print(f'Á medida de {m} Metro corresponde a: ')
+    print(f'{km} Quilômetro')
+    print(f'{hm} Hectômetro')
+    print(f'{dam} Decâmetro')
+    print(f'{dm:.1f} Decímetro')
+    print(f'{cm:.1f} Centímetro')
+    print(f'{mm:.1f} Milímetro')
+    
