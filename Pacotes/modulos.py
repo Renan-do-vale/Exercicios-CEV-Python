@@ -82,4 +82,12 @@ def conversor(m):
     print(f'{dm:.1f} Decímetro')
     print(f'{cm:.1f} Centímetro')
     print(f'{mm:.1f} Milímetro')
+
+
+def tabuada(n):
+    for c in range(1,11):
+        print(f'{n} x {c} = {n*c}')
+
+
+
     
