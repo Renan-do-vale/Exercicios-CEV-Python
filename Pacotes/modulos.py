@@ -89,5 +89,7 @@ def tabuada(n):
         print(f'{n} x {c} = {n*c}')
 
 
-
+def ConversorDolar(n):
+    r = n/5.07
+    return r
     
