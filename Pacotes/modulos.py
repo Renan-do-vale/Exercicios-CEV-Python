@@ -92,4 +92,4 @@ def tabuada(n):
 def ConversorDolar(n):
     r = n/5.07
     return r
-    
+ 
