@@ -93,3 +93,6 @@ def ConversorDolar(n):
     r = n/5.07
     return r
  
+
+def calcDesconto(preco, porcentagem):
+    return preco - (preco * porcentagem / 100)
