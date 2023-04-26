@@ -34,6 +34,9 @@ def leiafloat(msg):
             numero = float(input(msg))
         except (TypeError, ValueError):
             print(f'{cores["vermelho"]}Erro!{cores["limpar"]} digite um número valido.')
+        except KeyboardInterrupt:
+            print('O usuário preferiu não informa os dados!')
+            break
         else:
             return numero
             break
@@ -100,3 +103,8 @@ def calcDesconto(preco, porcentagem):
 
 def calcAumento(preco, porcentagem):
     return preco + (preco * porcentagem / 100)
+
+
+def CelciusForfahrenheit(celcius):
+    fahrenheit = celcius * 1.8 + 32
+    print(f'the temperature of {celcius}°C is equals to °{fahrenheit}°F!')
